@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Story Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .story-box {
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 8px;
+            max-width: 600px;
+            background-color: #f9f9f9;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Story Generator</h1>
+    <div class="story-box">
+        <p>{{ story }}</p>
+    </div>
+    <form method="get" action="/">
+        <button type="submit">Generate New Story</button>
+    </form>
+</body>
+</html>
